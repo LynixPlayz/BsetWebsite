@@ -1,16 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+.item1 {
+  grid-area: one;
+  background-image: url("https://th.bing.com/th/id/OIP.q5kGAwSoZR7d2oAd2EQ5dQHaHw?pid=ImgDet&rs=1&adlt=strict");
+  background-size: contain;
+}
+
+.item2 {
+  grid-area: two;
+}
+
+.item3 {
+  grid-area: three;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "one two three";
+  gap: 10px;
+  background-color: #1d1f20;
+  padding: 10px;
+  margin: 10px;
+  height: 40%;
+  width: 65%;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(138, 138, 138, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  border-radius: 25px;
+  font-family: "Varela Round", sans-serif;
+  width: 285px;
+  transition: 0.2s;
+}
+
+.grid-container > div:hover {
+  transform: scale(1.05);
+}
+
 #intro {
   border-radius: 25px;
   background: #1d1f20;
   padding: 100px;
-  width: 70em;
-  height: 150px;
-  transition: 2s;
+  width: 60%;
+  height: 25%;
+  transition: 1s;
+  margin: 0 auto;
 }
 
 #intro:hover {
-  height: 200px;
-  width: 100em;
+  height: 35%;
+  width: 80%;
 }
 
 #intro .b {
@@ -23,7 +68,7 @@
 }
 
 body {
-  display: flex;
+  display: flexbox;
   align-items: center;
   justify-content: center;
   height: 100vh;
